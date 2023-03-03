@@ -1,6 +1,6 @@
 public class CreditPaymentServise {
-    public double calculate(double a, int b) {
-        double coefficient = ((a * (Math.pow((1 + a), b))) / ((Math.pow((1 + a), b)) - 1));
+    public double calculate(double rate, int pays) {
+        double coefficient = ((rate * (Math.pow((1 + rate), pays))) / ((Math.pow((1 + rate), pays)) - 1));
 
         return coefficient;
     }
